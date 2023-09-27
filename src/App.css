@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Fira Code", "Montserrat", sans-serif;
+    font-weight: 700, 500, 300;
+    color-scheme: light;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .nav-links {
@@ -18,9 +30,116 @@ header {
     align-items: center;
 }
 
-
-
 .nav-items {
     list-style: none;
     padding: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
+
+.nav-items a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-items a {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 65px;
+}
+
+.container {
+    width: 1400px;
+    height: 875px;
+   /* border-style: solid;
+    border-radius: 50px; */
+    overflow: hidden;
+}
+
+.container h1 {
+    text-align: left;
+    padding-top: 300px;
+    padding-left: 150px;
+    text-shadow: 10px;
+    font-size: 4rem;
+}
+
+.container h2 {
+    text-align: left;
+    padding-left: 150px;
+    line-height: 50px;
+    font-size: 2rem;
+    color:#121212;
+}
+
+.container p {
+    padding-left: 150px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 50px;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+}
+
+.resume-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    }
+
+    .resume-button:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    }
+
+    .resume-button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+    }
+
+    .resume-button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+    }
+
+

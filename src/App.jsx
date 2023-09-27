@@ -16,7 +16,14 @@ function App() {
     </nav>
   </header>
   {/* End of Navbar */}
-  
+  <section>
+    <div className="container">
+      <h1>Dylan Nguyen</h1>
+      <h2>Junior Software Developer</h2>
+      <p>Dedicated Knowledge Connoisseur with a Passion for Lifelong Learning in the world software development.</p>
+      <button className="resume-button">Résumé</button>
+    </div>
+  </section>
   
   </>
 
